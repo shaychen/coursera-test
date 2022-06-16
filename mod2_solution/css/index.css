@@ -1,0 +1,99 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.title{
+    color: pink;
+    font-size: 175%;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrap{
+    width: 90%;
+    margin:0 5%;
+    /* outline: #333333 1px solid; */
+    position: fixed;
+}
+
+.wrap section{
+    font-size: 100%;
+    color: #333333;
+    line-height: 120%;
+    padding: 40px 0px 20px;
+    margin-bottom: 5%;
+    position: relative;
+    background-color: antiquewhite;
+    outline: 1px black solid;
+}
+
+section .sub-title{
+    padding: 10px;
+    font-size: 125%;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: #333333 1px solid;
+}
+
+.section-1 .sub-title{
+    background-color: coral;
+}
+
+.section-2 .sub-title{
+    background-color:maroon;
+    color: whitesmoke;
+}
+
+.section-3 .sub-title{
+    background-color:darkorange;
+    color:rgb(163, 255, 5);
+}
+
+.wrap section p{
+    padding: 0 20px;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+    .wrap section{
+        width: 30%;
+        margin-left: 5%;
+        float: left;
+    }
+
+    .wrap .section-1{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrap .section-1, .wrap .section-2{
+        width: 47.5%;
+        margin-left:5%;
+        float: left;
+    }
+
+    .wrap .section-1{
+        margin-left: 0;
+    }
+
+    .wrap .section-3{
+        width: 100%;
+        float: left;
+
+    }
+}
+
+@media (max-width: 767px) {
+    section{
+        width: 100%;
+    }
+}
